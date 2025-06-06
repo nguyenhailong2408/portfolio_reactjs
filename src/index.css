@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('./assets/Font/Lexend-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lexend-Bold';
+  src: url('./assets/Font/Lexend-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lexend-SemiBold';
+  src: url('./assets/Font/Lexend-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lexend-Light';
+  src: url('./assets/Font/Lexend-Light.ttf') format('truetype');
+}
+.font-lexend-bold {
+  font-family: 'Lexend-Bold', sans-serif;
+}
+.font-lexend-semibold {
+  font-family: 'Lexend-SemiBold', sans-serif;
+}
+.font-lexend-light {
+  font-family: 'Lexend-Light', sans-serif;
+}
+/* Styles for the title-section and its underline */
+.title-section {
+  /* Ensure default text color for light mode if not set elsewhere */
+  color: #1f2937; /* gray-900 */
+  transition: color 0.3s ease;
+}
+html.dark .title-section {
+  color: #f9fafb; /* white */
+}
+
+/* Custom styles for input-base */
+.input-base {
+  @apply w-full p-3 rounded-md border border-gray-300 dark:border-gray-600
+         bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white
+         placeholder-gray-400 dark:placeholder-gray-400
+         focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400
+         transition-colors duration-300;
+}
+
+/* Base styles cho các nút điều hướng */
+.nav-button-hover-effect {
+  /* Định nghĩa gradient mà bạn muốn xuất hiện */
+  background-image: linear-gradient(to right, var(--tw-gradient-from), var(--tw-gradient-to));
+  /* Ban đầu, kích thước nền là 0%, ẩn đi */
+  background-size: 0% 100%;
+  /* Không lặp lại nền */
+  background-repeat: no-repeat;
+  /* Vị trí ban đầu của nền là bên trái */
+  background-position: left center;
+  /* Thêm transition cho background-size và color */
+  transition: background-size 0.5s ease-in-out, color 0.5s ease-in-out;
+
+  /* Đảm bảo các biến màu cho gradient được định nghĩa */
+  --tw-gradient-from: #9333ea;
+  --tw-gradient-to: #db2777;
+}
+
+/* Hiệu ứng khi hover */
+.nav-button-hover-effect:hover {
+  /* Khi hover, kích thước nền mở rộng ra 100% chiều rộng */
+  background-size: 100% 100%;
+  /* Đảm bảo màu chữ đổi sang trắng khi nền xuất hiện */
+  color: white;
+}
+
+/* Đảm bảo màu chữ của nút bình thường (không hover, không active)
+   được định nghĩa rõ ràng cho chế độ sáng và tối
+   để tránh xung đột với transition của màu chữ khi hover */
+.nav-button-default-text-light {
+  color: theme('colors.gray.800'); /* Màu chữ mặc định cho chế độ sáng */
+}
+
+.nav-button-default-text-dark {
+  color: theme('colors.gray.100'); /* Màu chữ mặc định cho chế độ tối */
+}
+
+/* Thêm các biến CSS tùy chỉnh để dễ dàng quản lý màu gradient nếu bạn muốn thay đổi sau này */
+/* Bạn có thể đặt những biến này trong :root hoặc các nơi khác tùy theo cấu trúc CSS của bạn */
+:root {
+  --nav-gradient-from: theme('colors.blue.500');
+  --nav-gradient-to: theme('colors.cyan.500');
+}
+
+.title-section::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 70px;
+  height: 6px;
+  bottom: -15px;
+}
+.title-section::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 40px;
+  height: 6px;
+  bottom: -23px;
+}
+
+.before-line::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #ccc;
+}
+
+@media (min-width: 768px) {
+  .before-line::before {
+    width: calc(100% - 50px);
+  }
+}
+.card-title-icon {
+  @apply p-1 md:p-3 rounded-xl group-hover:scale-110 transition-transform duration-300 dark:bg-gray-800/50 bg-gray-200/50;
+}
+.card-title {
+  @apply text-[18px] md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#db2727] to-[#0f13e2] dark:from-[#05fdd0] dark:to-[#dbff13];
+}
+.card-base {
+  @apply rounded-lg border shadow-sm relative overflow-hidden 
+         hover:scale-[1.02] transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/20 
+         bg-white/90 border-gray-300 text-gray-800 
+         dark:bg-gray-900/80 dark:border-gray-700 dark:text-gray-100;
+}
+.card-hover {
+  @apply absolute inset-0 bg-gradient-to-r from-transparent via-[rgba(100,100,255,0.1)] to-transparent group-hover:via-[rgba(100,100,255,0.2)];
+}
+.card-list-item {
+  @apply rounded-full border text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 relative 
+         flex items-center gap-2 py-2 px-3 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20
+                        dark:bg-gray-800/50 dark:hover:bg-gray-700/80 dark:text-gray-100 dark:border-gray-600
+                        bg-gray-200/50 hover:bg-gray-300/80 text-gray-800 border-gray-400;
+}
+
+.text_title_gradient {
+  @apply text-[18px] md:text-2xl mb-3 font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#db2727] to-[#0f13e2] dark:from-[#05fdd0] dark:to-[#dbff13];
+}
+.home_title_name {
+  margin-bottom: 0.75rem;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #ff0000 var(--tw-gradient-from-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #cbe20f var(--tw-gradient-to-position);
+  background-clip: text;
+  font-weight: 700;
+  color: transparent;
+}
+
+.home_title_role {
+  margin-bottom: 0.75rem;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #00ffe7 var(--tw-gradient-from-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #00ff08 var(--tw-gradient-to-position);
+  background-clip: text;
+  font-weight: 700;
+  color: transparent;
+}
