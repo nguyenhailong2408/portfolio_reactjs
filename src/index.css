@@ -148,7 +148,7 @@ html.dark .title-section {
 }
 
 .text_title_gradient {
-  @apply text-[18px] md:text-2xl mb-3 font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#db2727] to-[#0f13e2] dark:from-[#05fdd0] dark:to-[#dbff13];
+  @apply text-[18px] inline-flex items-start gap-1 md:text-2xl mb-3 font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#db2727] to-[#0f13e2] dark:from-[#05fdd0] dark:to-[#dbff13];
 }
 .home_title_name {
   margin-bottom: 0.75rem;

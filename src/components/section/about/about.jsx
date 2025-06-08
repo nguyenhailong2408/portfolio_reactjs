@@ -10,8 +10,8 @@ const AboutMe = (props) => {
   const btnDownloadPDF = useMemo(() => <BtnDowloadPDF />, [])
   const summaryData = [
     t('summary1'),
-    t('summary2'),
-    t('summary3'),
+    // t('summary2'),
+    // t('summary3'),
     t('summary4')
   ]
   return (
@@ -31,7 +31,7 @@ const AboutMe = (props) => {
         </Button>
         <Button className='inline-flex items-center justify-center font-medium rounded w-10 h-10 group border border-gray-300 text-gray-700 hover:bg-gray-200'>
           <a
-            href='https://www.linkedin.com/in/nguy%E1%BB%85n-h%E1%BA%A3i-long-294b16235/'
+            href='https://www.linkedin.com/in/nguyen-hai-long-294b16235/'
             target='_blank'
             rel='noreferrer'
             aria-label='LinkedIn'
@@ -77,12 +77,12 @@ const AboutMe = (props) => {
               <span className='text-gray-700 dark:text-gray-300'>{t('addressContent')}</span>
             </p>
           </div>
-          <div className='flex flex-wrap md:gap-3'>
+          <div className='flex flex-row flex-wrap gap-0.5 md:gap-3'>
             {btnDownloadPDF}
             <button
               onClick={() => props.handleNavClick('resume')}
               className='
-            mt-6 px-8 py-3 rounded-full md:text-lg font-semibold text-white
+            mt-6 px-8 py-3 rounded-full text-sm md:text-lg font-semibold text-white
             bg-gradient-to-r from-purple-600 to-pink-600
             hover:from-purple-700 hover:to-pink-700
             transform hover:scale-105 transition-all duration-300

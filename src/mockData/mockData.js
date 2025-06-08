@@ -9,7 +9,7 @@ const cvDataEn = {
   address: 'Di An, Binh Duong',
   summary: [
     'I am a Full Stack Developer with over 4 years of experience in web application development from frontend to backend.',
-    'Passionate about creating high-quality products and leveraging modern technologies to solve technical challenges.',
+    // 'Passionate about creating high-quality products and leveraging modern technologies to solve technical challenges.',
     'Always eager to learn and looking forward to contributing to multidisciplinary and cross-platform software projects.',
     'Applying knowledge to build practical technology solutions that deliver real value and contribute to the community is the goal I always pursue.',
   ],
@@ -50,9 +50,9 @@ const cvDataEn = {
         'Collaborated with BAs, DBAs, QAs to develop, deploy, maintain, upgrade, test, and optimize software (procurement - allocation - inventory balancing - supplier communication) in the ERP system for over 3000 stores across the country.',
         'Maintained, optimized, and upgraded existing ERP Winform modules and features.',
         'Migrated modules from Winform to Web versions.',
-        'Built multiple backend APIs following Microservices architecture.',
-        'Technologies used: ASP.NET Core, AngularJS, Kendo UI, API (REST/SOAP), Winform, Dapper, PostgreSQL, Oracle, Redis, Elasticsearch, Hazelcast.',
-        'Team Size: 16 members (4 BAs, 2 QAs, 2 DBAs, 6 Developers, and 2 Deployment Staff)',
+        'Participated in building multiple backend APIs based on Microservice architecture.',
+        'Technologies: ASP.NET Core, AngularJS, Kendo UI, API (REST/SOAP), Winform, Dapper, PostgreSQL, Oracle, Redis, Elasticsearch, Hazelcast.',
+        'Team Size: 16 members (4 BAs, 2 QAs, 2 DBAs, 6 DEVs, and 2 Implementation Specialists)',
       ],
       techStack:
         'ASP.NET Core, AngularJS, Kendo UI, API (REST/SOAP), Winform, Dapper, PostgreSQL, Oracle, Redis, Elasticsearch, Hazelcast.',
@@ -64,18 +64,19 @@ const cvDataEn = {
       duration: '02/2021 - 03/2022',
       description: [
         'Received and analyzed project requirements from the PM.',
+        'Managed project progress, assigned tasks, provided technical support, and reviewed code for team members.',
         'Developed and deployed web applications from scratch using ASP.NET MVC, MSSQL, etc.',
         'Designed and implemented databases with MS SQL Server.',
         'Built backend APIs and managed databases using Entity Framework.',
         'Worked with designers and editors to develop UI and digital content.',
         'Developed user interfaces using HTML, CSS, JavaScript, jQuery, Bootstrap.',
-        'Managed project progress, assigned tasks, provided technical support, and reviewed code for team members.',
         'Split large systems into smaller subsystems such as Notification Management, SMS, User Account Management, Digital Content, Shortlinks, Reports, etc.',
       ],
       projects: [
         {
           name: 'EDUHOME',
           duration: '02/2021 - 03/2022',
+          company:'DTP EDUCATION SOLUTION',
           url: ['https://eduhome.com.vn'],
           description:
             'Eduhome is a cross-platform education application offering comprehensive teaching resources and assignments for teachers, parents, and students.',
@@ -89,7 +90,7 @@ const cvDataEn = {
           ],
           techStack:
             'ASP.NET MVC, Entity Framework, MS SQLSERVER, IIS Server, HTML, CSS, Jquery, Javascript, Bootstrap, Razor, LinQ',
-          teamSize: '9 members (4 Web Devs, 1 BA, 2 Designers, 2 Testers)',
+          teamSize: '9 members (4 DEVs, 1 BAs, 2 Designers, 2 Testers)',
         },
       ],
     },
@@ -107,23 +108,9 @@ const cvDataEn = {
       ],
       projects: [
         {
-          CHPlay: 'https://play.google.com/store/apps/details?id=vn.dtponline.dhamobile&hl=vi',
-          AppStore: 'https://apps.apple.com/vn/app/digital-homework-activities/id1504632625?l=vi',
-          name: 'Digital Homework Activities (DHA)',
-          duration: '08/2019 - 02/2020',
-          description:
-            'DHA is an educational app for learning English through games, allowing students to practice and complete homework in a fun way.',
-          role: 'Developer | React Native',
-          responsibilities: [
-            'Participated in research and development of the first version of the application.',
-            'Developed user interfaces according to designs and requirements.',
-          ],
-          techStack: 'React Native',
-          teamSize: '9 members (1 Manager, 1 Tech Lead, 3 React Native Devs, 1 Tester, 3 Game Devs)',
-        },
-        {
           name: 'Learning Manager Systems (LMS)',
           duration: '02/2020 - 02/2021',
+          company:'DTP EDUCATION SOLUTION',
           url: ['https://i-course.vn', 'https://dtpteacher.vn/lms-i-course-learning-management-system/'],
           description:
             'The LMS system supports comprehensive management in education: schools, classes, students, teachers, schedules, attendance, payroll, reporting, etc.',
@@ -137,6 +124,22 @@ const cvDataEn = {
             'ASP.NET MVC, Entity Framework, MS SQLSERVER, IIS Server, HTML, CSS, Jquery, Javascript, Bootstrap, Razor, LinQ',
           teamSize: '9 members (1 Lead, 4 Devs, 2 Designers, 2 Testers)',
         },
+        {
+          name: 'Digital Homework Activities (DHA)',
+          duration: '08/2019 - 02/2020',
+          company:'DTP EDUCATION SOLUTION',
+          CHPlay: 'https://play.google.com/store/apps/details?id=vn.dtponline.dhamobile&hl=vi',
+          AppStore: 'https://apps.apple.com/vn/app/digital-homework-activities/id1504632625?l=vi',
+          description:
+            'DHA is an educational app for learning English through games, allowing students to practice and complete homework in a fun way.',
+          role: 'Developer | React Native',
+          responsibilities: [
+            'Participated in research and development of the first version of the application.',
+            'Developed user interfaces according to designs and requirements.',
+          ],
+          techStack: 'React Native',
+          teamSize: '9 members (1 Manager, 1 Tech Lead, 3 React Native Devs, 1 Tester, 3 Game Devs)',
+        },
       ],
     },
   ],
@@ -144,8 +147,8 @@ const cvDataEn = {
     {
       name: 'Beedecor',
       url: 'https://beedecor.net',
-      description: 'A website for an interior design and construction service company.',
-      duration: '05/2024 - Present',
+      description: 'BEEDECOR is a website for an interior design and construction service company.',
+      duration: '01/2025 - 03/2025',
     },
   ],
   education: [

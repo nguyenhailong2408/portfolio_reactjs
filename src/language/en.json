@@ -24,7 +24,7 @@
   "description": "Description",
   "role": "Role",
   "responsibilities": "Responsibilities",
-  "techStack": "TechStack",
+  "techStack": "Tech Stack",
   "teamSize": "Team Size",
   "download": "Download",
   "homeDesc": "I am a **Full Stack Developer** with over 4 years of experience in developing web applications from front-end to back-end...",
@@ -48,5 +48,8 @@
   "iam": "I'm",
   "moreAboutMe": "More aout me",
   "technologies": "Technologies",
-  "programmingLanguagesAndTools": "Programming Languages & Tools"
+  "programmingLanguagesAndTools": "Programming Languages & Tools",
+  "company":"Company",
+  "CHPlay": "CH play",
+  "AppStore": "App Store"
 }

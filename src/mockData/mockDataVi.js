@@ -9,7 +9,7 @@ const cvDataVi = {
   address: 'Dĩ An, Bình Dương',
   summary: [
     'Tôi là một Lập trình viên Full Stack với hơn 4 năm kinh nghiệm phát triển ứng dụng web từ frontend đến backend.',
-    'Đam mê tạo ra các sản phẩm chất lượng cao và sử dụng công nghệ mới để giải quyết các thách thức kỹ thuật.',
+    // 'Đam mê tạo ra các sản phẩm chất lượng cao và sử dụng công nghệ mới để giải quyết các thách thức kỹ thuật.',
     'Sẵn sàng học hỏi và mong muốn tham gia vào các dự án phát triển phần mềm đa ngành, đa nền tảng.',
     'Việc áp dụng kiến thức để xây dựng các giải pháp công nghệ hữu ích, tạo ra giá trị thực và đóng góp cho cộng đồng là mục tiêu tôi luôn theo đuổi.',
   ],
@@ -52,7 +52,7 @@ const cvDataVi = {
         'Chuyển đổi các module liên quan từ phiên bản Winform qua Website',
         'Tham gia xây dựng nhiều API backend theo kiến trúc Microservices.',
         'Công nghệ sử dụng: ASP.NET Core, AngularJS, Kendo UI, API (REST/SOAP), Winform, Dapper, PostgreSQL, Oracle, Redis, Elasticsearch, Hazelcast.',
-        'TeamSize: 16 người (4 BA, 2 QA, 2 DBA, 6 DEV, và 2 Nhân viên triển khai)',
+        'TeamSize: 16 người (4 BAs, 2 QAs, 2 DBAs, 6 DEVs, và 2 Implementation Specialists)',
       ],
       techStack:
         'ASP.NET Core, AngularJS, Kendo UI, API (REST/SOAP), Winform, Dapper, PostgreSQL, Oracle, Redis, Elasticsearch, Hazelcast.',
@@ -64,18 +64,19 @@ const cvDataVi = {
       duration: '02/2021 - 03/2022',
       description: [
         'Tiếp nhận, phân tích, thiết kế hệ thống theo yêu cầu từ quản lý dự án.',
+        'Quản lý dự án, phân công công việc, hỗ trợ kỹ thuật, review code cho thành viên trong nhóm.',
         'Phát triển và triển khai ứng dụng web từ đầu với ASP.NET MVC, MSSQL,...',
         'Phân tích và thiết kế cơ sở dữ liệu với MS SQL Server.',
         'Xây dựng API backend và quản lý cơ sở dữ liệu bằng Entity Framework.',
         'Hợp tác với designer và editor để phát triển giao diện và nội dung số.',
         'Phát triển giao diện người dùng với HTML, CSS, JavaScript, jQuery, Bootstrap.',
-        'Quản lý dự án, phân công công việc, hỗ trợ kỹ thuật, review code cho thành viên trong nhóm.',
         'Tách hệ thống lớn thành nhiều hệ thống nhỏ như Quản lý thông báo, SMS, Quản lý tài khoản người dùng, Dữ liệu số, Tạo shortlink, Báo cáo,...',
       ],
       projects: [
         {
           name: 'EDUHOME',
           duration: '02/2021 - 03/2022',
+          company:'DTP EDUCATION SOLUTION',
           url: ['https://eduhome.com.vn'],
           description:
             'Eduhome là ứng dụng giáo dục đa nền tảng, cung cấp tài nguyên giảng dạy và bài tập toàn diện cho giáo viên, phụ huynh và học sinh.',
@@ -89,7 +90,7 @@ const cvDataVi = {
           ],
           techStack:
             'ASP.NET MVC, Entity Framework, MS SQLSERVER, IIS Server, HTML, Css, Jquery, Javascript, Bootstrap, Razor, LinQ',
-          teamSize: '9 thành viên (4 Web Devs, 1 BA, 2 Designers, 2 Testers)',
+          teamSize: '9 thành viên (4 Devs, 1 BA, 2 Designers, 2 Testers)',
         },
       ],
     },
@@ -107,24 +108,10 @@ const cvDataVi = {
       ],
       projects: [
         {
-          CHPlay: 'https://play.google.com/store/apps/details?id=vn.dtponline.dhamobile&hl=vi',
-          AppStore: 'https://apps.apple.com/vn/app/digital-homework-activities/id1504632625?l=vi',
-          name: 'Digital Homework Activities (DHA)',
-          duration: '08/2019 - 02/2020',
-          description:
-            'DHA là ứng dụng học tiếng Anh thông qua trò chơi cho học sinh làm bài tập và ôn luyện tại nhà một cách thú vị.',
-          role: 'Developer | React Native',
-          responsibilities: [
-            'Tham gia nghiên cứu và phát triển phiên bản đầu tiên của ứng dụng.',
-            'Phát triển giao diện người dùng theo thiết kế và yêu cầu.',
-          ],
-          techStack: 'React Native',
-          teamSize: '9 thành viên (1 Manager, 1 Leader, 3 React Native Devs, 1 Testers, 3 Game Devs)',
-        },
-        {
           name: 'Learning Manager Systems (LMS)',
           duration: '02/2020 - 02/2021',
-          url: ['https://i-course.vn'],
+          company:'DTP EDUCATION SOLUTION',
+          url: ['https://i-course.vn', 'https://dtpteacher.vn/lms-i-course-learning-management-system/'],
           description:
             'Hệ thống LMS giúp quản lý toàn diện trong ngành giáo dục: trường, lớp, học sinh, giáo viên, lịch giảng dạy, điểm danh, tính lương, báo cáo thống kê,...',
           role: 'Full Stack Developer',
@@ -137,6 +124,22 @@ const cvDataVi = {
             'ASP.NET MVC, Entity Framework, MS SQLSERVER, IIS Server, HTML, Css, Jquery, Javascript, Bootstrap, Razor, LinQ',
           teamSize: '9 thành viên (1 Leader, 4 Dev, 2 Designer, 2 Tester)',
         },
+        {
+          name: 'Digital Homework Activities (DHA)',
+          duration: '08/2019 - 02/2020',
+          company:'DTP EDUCATION SOLUTION',
+          CHPlay: 'https://play.google.com/store/apps/details?id=vn.dtponline.dhamobile&hl=vi',
+          AppStore: 'https://apps.apple.com/vn/app/digital-homework-activities/id1504632625?l=vi',
+          description:
+            'DHA là ứng dụng học tiếng Anh thông qua trò chơi cho học sinh làm bài tập và ôn luyện tại nhà một cách thú vị.',
+          role: 'Developer | React Native',
+          responsibilities: [
+            'Tham gia nghiên cứu và phát triển phiên bản đầu tiên của ứng dụng.',
+            'Phát triển giao diện người dùng theo thiết kế và yêu cầu.',
+          ],
+          techStack: 'React Native',
+          teamSize: '9 thành viên (1 Manager, 1 Leader, 3 React Native Devs, 1 Testers, 3 Game Devs)',
+        },
       ],
     },
   ],
@@ -144,8 +147,8 @@ const cvDataVi = {
     {
       name: 'Beedecor',
       url: 'https://beedecor.net',
-      description: 'Dự án là website cho công ty chuyên cung cấp dịch vụ thiết kế và thi công nội thất.',
-      duration: '05/2024 - Nay',
+      description: 'BEEDECOR là trang web giới thiệu dịch vụ thiết kế và thi công nội thất.',
+      duration: '01/2025 - 03/2025',
     },
   ],
   education: [

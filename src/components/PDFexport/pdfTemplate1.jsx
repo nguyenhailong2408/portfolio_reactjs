@@ -1,6 +1,6 @@
 /* eslint-disable comma-dangle */
 /* eslint-disable indent */
-import { Page, Text, View, Document, StyleSheet, Font, Svg, Path, Link } from '@react-pdf/renderer'
+import { Page, Text, View, Document, StyleSheet, Font, Link } from '@react-pdf/renderer'
 // import avatar from '../../assets/Image/avatar.jpg'
 import RobotoRegular from '../../assets/Font/Roboto-Regular.ttf'
 import RobotoBold from '../../assets/Font/Roboto-Bold.ttf'
@@ -14,6 +14,7 @@ import EmailIcon from '../icon/emailIcon'
 import AddressIcon from '../icon/iconAddress'
 import BirthDayIcon from '../icon/iconBirthDay'
 import CvOnlineIcon from '../icon/cvonlineIcon'
+import { useTranslations } from '../../utils/translations'
 Font.register({
   family: 'Roboto',
   fonts: [
@@ -33,7 +34,8 @@ Font.register({
   ],
 })
 
-function MyDocument({ data, translations }) {
+function MyDocument({ data }) {
+  const translations = useTranslations()
   return (
     <Document>
       <Page size='A4' style={styles.page}>
@@ -174,7 +176,6 @@ function MyDocument({ data, translations }) {
                       // wrap={false}
                       style={{
                         display: 'flex',
-                        flexDirection: 'row',
                         flexWrap: 'wrap',
                         width: '75%',
                       }}
@@ -235,7 +236,7 @@ function MyDocument({ data, translations }) {
                             <View
                               key={j}
                               className='projectItem'
-                              style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}
+                              style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', width: '100%' }}
                               // wrap={false}
                             >
                               <View
@@ -250,18 +251,27 @@ function MyDocument({ data, translations }) {
                                 if (key === 'name' || key === 'duration') return null // Skip 'name' and 'duration'
                                 return (
                                   <View
-                                    key={j + k}
+                                    key={k}
                                     className='desProject'
                                     style={{
                                       display: 'flex',
-                                      flexDirection: 'row',
+                                      flexDirection: 'col',
                                       alignItems: 'flex-start',
                                       flexWrap: 'wrap',
                                       marginLeft: 10,
+                                      width: '100%',
                                     }}
                                     wrap={false}
                                   >
-                                    <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start' }}>
+                                    <View
+                                      style={{
+                                        display: 'flex',
+                                        flexDirection: 'row',
+                                        alignItems: 'flex-start',
+                                        justifyContent: 'flex-start',
+                                        width: '100%',
+                                      }}
+                                    >
                                       {(() => {
                                         switch (key) {
                                           case 'url':
@@ -276,6 +286,17 @@ function MyDocument({ data, translations }) {
                                                   }}
                                                 >
                                                   {key}:&nbsp;
+                                                </Text>
+                                                <View
+                                                  style={{
+                                                    display: 'flex',
+                                                    flexDirection: 'col',
+                                                    alignItems: 'flex-start',
+                                                    marginLeft: -16,
+                                                    marginTop: -3,
+                                                    marginBottom: 3,
+                                                  }}
+                                                >
                                                   {proj[key].map((url, i) => (
                                                     <Text key={i}>
                                                       <Link
@@ -291,7 +312,7 @@ function MyDocument({ data, translations }) {
                                                       &nbsp;
                                                     </Text>
                                                   ))}
-                                                </Text>
+                                                </View>
                                               </>
                                             )
                                           case 'CHPlay':

@@ -2,11 +2,14 @@ export default function IconLink() {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      className='h-4 w-4 mr-1'
+      className='mr-1'
       fill='none'
       viewBox='0 0 24 24'
       stroke='currentColor'
       strokeWidth={2}
+      color='#db2727'
+      width='24px'
+      height='24px'
     >
       <path
         strokeLinecap='round'

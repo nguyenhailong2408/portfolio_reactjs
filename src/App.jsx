@@ -139,6 +139,7 @@ export default function Portfolio() {
           <Skills elementID={'skill'} />
           {/* <Contact elementID={'contact'} /> */}
           {memoizedResume}
+          {/* <Resume elementID={'resume'} isMobile={isMobile}/> */}
           <footer className='text-center mt-10 text-sm text-gray-500'>
             &copy; 2025 Nguyen Hai Long. All rights reserved.
           </footer>

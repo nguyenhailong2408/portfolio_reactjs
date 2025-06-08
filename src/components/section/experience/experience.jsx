@@ -1,16 +1,16 @@
 import { useTranslation } from 'react-i18next'
+import IconLink from './../../icon/iconLink'
 
 const experiences = [
   {
     position: 'Procurement System Developer (ERP)',
     company: 'Công ty cổ phần Thế giới Di động (MWG)',
+    extraDesc: '(Company\'s internal project)',
+    urlCompany: 'https://mwg.vn/',
     duration: '04/2022 - 04/2024',
     description: [
-      'Collaborated with BAs, DBAs, QAs to develop, deploy, maintain, upgrade, test, and optimize software (procurement - allocation - inventory balancing - supplier communication) in the ERP system for over 3000 stores nationwide.',
-      'Maintained, optimized, and upgraded existing ERP Winform modules and features.',
-      'Migrated modules from Winform to Web versions.',
-      'Built multiple backend APIs following Microservices architecture.',
-      'Team Size: 16 members (4 BAs, 2 QAs, 2 DBAs, 6 Developers, and 2 Deployment Staff)',
+      'Participated in developing, upgrading, and optimizing the ERP system for over 3000 stores, covering procurement, allocation, inventory balancing, and supplier communication.',
+      'Took part in migrating Winform modules to web, building backend APIs based on microservices architecture and maintaining existing modules.',
     ],
     techStack:
       'ASP.NET Core,HTML, Css, Javascript, Bootstrap, AngularJS, Kendo UI, API (REST/SOAP), Winform, Dapper, PostgreSQL, Oracle, Redis, Elasticsearch, Hazelcast.',
@@ -18,16 +18,13 @@ const experiences = [
   {
     position: 'Mid-level Software Developer / Fresher Leader',
     company: 'DTP EDUCATION SOLUTION',
+    urlCompany: 'https://dtp-education.com/',
+    extraDesc: '(Company\'s internal project)',
     duration: '02/2021 - 03/2022',
     description: [
-      'Received and analyzed project requirements from the PM.',
-      'Developed and deployed web applications from scratch using ASP.NET MVC, MSSQL, etc.',
-      'Designed and implemented databases with MS SQL Server.',
-      'Built backend APIs and managed databases using Entity Framework.',
-      'Worked with designers and editors to develop UI and digital content.',
-      'Developed user interfaces using HTML, CSS, JavaScript, jQuery, Bootstrap.',
-      'Managed project progress, assigned tasks, provided technical support, and reviewed code for team members.',
-      'Split large systems into smaller subsystems such as Notification Management, SMS, User Account Management, Digital Content, Shortlinks, Reports, etc.',
+      'Participated in developing Eduhome website from scratch, serving over 300,000 users, using ASP.NET MVC, MSSQL, etc.',
+      'My responsibilities included leading the team, assigning tasks, and being the main developer in the project.',
+      'Designed and managed databases and developed backend APIs for Web, Desktop, and Mobile versions using Entity Framework and MS SQL Server.',
     ],
     techStack:
       'ASP.NET MVC, Entity Framework, MS SQLSERVER, IIS Server, HTML, CSS, Jquery, Javascript, Bootstrap, Razor, LinQ',
@@ -35,14 +32,12 @@ const experiences = [
   {
     position: 'Developer',
     company: 'DTP EDUCATION SOLUTION',
+    urlCompany: 'https://dtp-education.com/',
+    extraDesc: '(Company\'s internal project)',
     duration: '06/2019 - 02/2021',
     description: [
-      'Received, analyzed, and designed systems based on requirements from Leader / PM.',
-      'Researched and developed mobile applications using React Native.',
-      'Developed and deployed web applications from scratch using ASP.NET MVC.',
-      'Built backend APIs and managed databases with Entity Framework and MS SQL Server.',
-      'Worked with designers and editors to develop digital content and user interfaces.',
-      'Developed UI using HTML, CSS, jQuery, and JavaScript.',
+      'Participated in researching and developing the first version of the DHA (Digital Homework Activities) mobile application using React Native.',
+      'Participated in developing LMS (Learning Management System) website from scratch using ASP.NET MVC, MSSQL, etc.',
     ],
     techStack:
       'React Native, ASP.NET MVC, Entity Framework, MS SQLSERVER, IIS Server, HTML, CSS, Jquery, Javascript, Bootstrap, Razor, LinQ',
@@ -52,13 +47,12 @@ const experiences_vi = [
   {
     position: 'Procurement System Developer (ERP)',
     company: 'Công ty cổ phần Thế giới Di động (MWG)',
+    extraDesc: '(Dự án nội bộ của công ty)',
+    urlCompany: 'https://mwg.vn/',
     duration: '04/2022 - 04/2024',
     description: [
-      'Phối hợp với BA, DBA, QA để phát triển, triển khai, bảo trì, nâng cấp, kiểm thử và tối ưu phần mềm (mua hàng - phân bổ - cân bằng tồn kho - giao tiếp nhà cung cấp) trong hệ thống ERP cho hơn 3000 cửa hàng toàn quốc.',
-      'Bảo trì, tối ưu và nâng cấp các module và tính năng Winform ERP hiện có.',
-      'Chuyển đổi các module từ Winform sang phiên bản Web.',
-      'Xây dựng nhiều API backend theo kiến trúc Microservices.',
-      'Nhóm: 16 thành viên (4 BA, 2 QA, 2 DBA, 6 DEV, 2 nhân sự triển khai)',
+      'Tham gia phát triển, nâng cấp và tối ưu hệ thống ERP phục vụ hơn 3000 cửa hàng, bao gồm quy trình mua hàng, chia hàng, cân bằng hàng tồn kho, giao tiếp với NCC.',
+      'Tham gia chuyển đổi module Winform sang Web, xây dựng API theo kiến trúc Microservice và bảo trì các module hiện có.',
     ],
     techStack:
       'ASP.NET Core, HTML, CSS, Javascript, Bootstrap, AngularJS, Kendo UI, API (REST/SOAP), Winform, Dapper, PostgreSQL, Oracle, Redis, Elasticsearch, Hazelcast.',
@@ -66,41 +60,36 @@ const experiences_vi = [
   {
     position: 'Mid-level Software Developer / Fresher Leader',
     company: 'DTP EDUCATION SOLUTION',
+    // extraDesc: '(Dự án nội bộ của công ty)',
+    urlCompany: 'https://dtp-education.com/',
     duration: '02/2021 - 03/2022',
     description: [
-      'Tiếp nhận và phân tích yêu cầu dự án từ PM.',
-      'Phát triển và triển khai ứng dụng web từ đầu bằng ASP.NET MVC, MSSQL, v.v.',
-      'Thiết kế và triển khai cơ sở dữ liệu với MS SQL Server.',
-      'Xây dựng API backend và quản lý dữ liệu bằng Entity Framework.',
-      'Phối hợp với thiết kế và biên tập viên để phát triển giao diện và nội dung số.',
-      'Xây dựng giao diện người dùng bằng HTML, CSS, JavaScript, jQuery, Bootstrap.',
-      'Quản lý tiến độ dự án, phân chia công việc, hỗ trợ kỹ thuật và review code cho các thành viên trong nhóm.',
-      'Tách hệ thống lớn thành các phân hệ nhỏ như Quản lý Thông báo, SMS, Tài khoản người dùng, Nội dung số, Shortlink, Báo cáo,...',
+      'Tham gia phát triển website Eduhome từ đầu, phục vụ hơn 300.000 người dùng, sử dụng ASP.NET MVC, HTML, CSS, Bootstrap, JQuery,...',
+      'Trách nhiệm của tôi là quản lý nhóm, phân chia công việc và là nhà phát triển chính trong dự án',
+      'Thiết kế và quản lý cơ sở dữ liệu, đồng thời phát triển API backend cho các phiên bản Web, Desktop và Mobile sử dụng Entity Framework và MS SQL Server.',
     ],
     techStack:
-      'ASP.NET MVC, Entity Framework, MS SQLSERVER, IIS Server, HTML, CSS, Jquery, Javascript, Bootstrap, Razor, LinQ',
+      'ASP.NET MVC, Entity Framework, MS SQLSERVER, IIS Server, HTML, CSS, Jquery, Javascript, Bootstrap, Razor, LinQ, Firebase',
   },
   {
-    position: 'Developer',
+    position: 'Full Stack Developer',
     company: 'DTP EDUCATION SOLUTION',
+    urlCompany: 'https://dtp-education.com/',
+    extraDesc: '(Dự án nội bộ của công ty)',
     duration: '06/2019 - 02/2021',
     description: [
-      'Tiếp nhận, phân tích và thiết kế hệ thống theo yêu cầu từ Leader / PM.',
-      'Nghiên cứu và phát triển ứng dụng di động bằng React Native.',
-      'Phát triển và triển khai ứng dụng web từ đầu bằng ASP.NET MVC.',
-      'Xây dựng API backend và quản lý cơ sở dữ liệu bằng Entity Framework và MS SQL Server.',
-      'Phối hợp với thiết kế và biên tập viên để xây dựng nội dung số và giao diện người dùng.',
-      'Phát triển UI bằng HTML, CSS, Bootstrap, jQuery và JavaScript.',
+      'Tham gia nghiên cứu và phát triển phiên bản đầu của ứng dụng di động DHA (Digital Homework Activities) với React Native.',
+      'Tham gia phát triển website Hệ thống Quản lý Học tập (LMS) từ đầu bằng ASP.NET MVC, MSSQL, HTML, CSS, Bootstrap, Jquery,...',
     ],
     techStack:
-      'React Native, ASP.NET MVC, Entity Framework, MS SQLSERVER, IIS Server, HTML, CSS, Jquery, Javascript, Bootstrap, Razor, LinQ',
+      'React Native, ASP.NET MVC, Entity Framework, MS SQLSERVER, IIS Server, HTML, CSS, Jquery, Javascript, Bootstrap, Razor, LinQ, Firebase',
   },
-];
+]
 
 const Experience = (props) => {
   const { t, i18n } = useTranslation()
-  const experienceData = i18n.language === 'vi'? experiences_vi: experiences;
-  const tranlations = { technologies : t('technologies')}
+  const experienceData = i18n.language === 'vi' ? experiences_vi : experiences
+  const tranlations = { technologies: t('technologies') }
   return (
     <div id={props.elementID} className='my-5 md:my-10 p-4 md:p-10 pt-6 min-h-screen'>
       <h2 className='text-3xl md:text-5xl font-semibold mb-10 relative title-section'>{t('experience')}</h2>
@@ -121,7 +110,7 @@ const Experience = (props) => {
 
             {/* Nội dung kinh nghiệm */}
             <div
-              className='bg-white/50 dark:bg-gray-800/50 dark:hover:bg-gray-700/80 shadow-xl rounded-xl p-6 lg:p-8 border border-gray-300 dark:border-gray-700 flex-1
+              className='shadow-xl rounded-xl p-6 lg:p-8 bg-white/50 dark:bg-gray-800/50 dark:hover:bg-gray-700/80  border border-gray-300 dark:border-gray-700 flex-1
                             transform transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl'
             >
               {/* Duration được đặt trước Position và Company */}
@@ -130,8 +119,15 @@ const Experience = (props) => {
                   {exp.duration}
                 </span>
               </p>
-              <h3 className='text_title_gradient'>{exp.position}</h3>
-              <p className='md:text-lg text-gray-700 dark:text-gray-300 mt-1 mb-4'>{exp.company}</p>
+              <a href={exp.urlCompany} target='blank' className='text_title_gradient'>
+                <span style={{ width: '24px', marginTop: '5px' }}>
+                  <IconLink />
+                </span>
+
+                {exp.company}
+              </a>
+              <p className='md:text-lg text-gray-700 dark:text-gray-300 mt-1 mb-4'>{exp.position}</p>
+              <p className='md:text-lg text-gray-700 dark:text-gray-300 mt-1 mb-4'>{exp.extraDesc}</p>
 
               <ul className='list-disc list-inside text-gray-700 dark:text-gray-300 mb-5 space-y-2 leading-relaxed'>
                 {exp.description.map((desc, i) => (
@@ -141,7 +137,9 @@ const Experience = (props) => {
 
               {exp.techStack && (
                 <div className='mb-0'>
-                  <p className='text-md font-semibold text-gray-800 dark:text-gray-200 mb-2'>{tranlations.technologies}:</p>
+                  <p className='text-md font-semibold text-gray-800 dark:text-gray-200 mb-2'>
+                    {tranlations.technologies}:
+                  </p>
                   <div className='flex flex-wrap gap-2'>
                     {exp.techStack.split(',').map((tech, i) => (
                       <span

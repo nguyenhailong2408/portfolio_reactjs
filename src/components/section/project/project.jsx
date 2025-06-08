@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import IconLink from '../../icon/iconLink'
 
 const projectsEn = [
   {
@@ -9,33 +10,31 @@ const projectsEn = [
       'Eduhome is a cross-platform education application offering comprehensive teaching resources and assignments for teachers, parents, and students. It streamlines the learning process by providing a centralized platform for various educational activities.',
     role: 'Fresher Leader / Full Stack Developer',
     responsibilities: [
-      'Developed and deployed the web application using ASP.NET MVC, ensuring robust performance and scalability.',
-      'Designed and managed the database with MS SQL Server, optimizing queries for efficient data retrieval.',
-      'Built backend APIs using Entity Framework for seamless integration across Web, Desktop, and Mobile versions.',
-      'Designed responsive UI using HTML, CSS, JavaScript, jQuery, and Bootstrap to ensure a consistent user experience on all devices.',
-      'Managed project progress, assigned tasks, provided technical support, and conducted code reviews for team members, fostering a collaborative environment.',
+      'Managed project timeline, delegated tasks, provided technical support, and reviewed code for team members.',
+      'Participated in developing and deploying web applications using ASP.NET MVC, Entity Framework, HTML, CSS, JavaScript, jQuery, Bootstrap, etc.',
+      'Designed and managed databases using MS SQL Server.',
     ],
     techStack:
-      'ASP.NET MVC, Entity Framework, MS SQLSERVER, IIS Server, HTML, CSS, Jquery, Javascript, Bootstrap, Razor, LinQ',
+      'ASP.NET MVC, Entity Framework, MS SQLSERVER, IIS Server, HTML, CSS, Jquery, Javascript, Bootstrap, Razor, LinQ, Firebase',
     teamSize: '9 members (4 Web Devs, 1 BA, 2 Designers, 2 Testers)',
   },
   {
     name: 'Learning Manager Systems (LMS)',
     duration: '02/2020 - 02/2021',
-    url: ['https://i-course.vn', 'https://dtpteacher.vn/lms-i-course-learning-management-system/'],
+    url: ['https://dtpteacher.vn/lms-i-course-learning-management-system/'],
     description:
       'The LMS system provides comprehensive management solutions for educational institutions, covering schools, classes, students, teachers, schedules, attendance, payroll, and reporting. It aims to streamline administrative tasks and enhance educational operations.',
     role: 'Full Stack Developer',
     responsibilities: [
-      'Developed and deployed web applications from scratch using ASP.NET MVC, ensuring robust and scalable solutions.',
-      'Built backend APIs and managed databases with Entity Framework and MS SQL Server for efficient data handling.',
-      'Developed user interfaces using HTML, CSS, jQuery, and JavaScript, focusing on user-friendability and modern aesthetics.',
+      'Developed and deployed web applications from scratch using ASP.NET MVC, HTML, CSS, jQuery, and JavaScript.',
+      'Built backend APIs and managed databases using Entity Framework and MS SQL Server.',
     ],
     techStack:
-      'ASP.NET MVC, Entity Framework, MS SQLSERVER, IIS Server, HTML, CSS, Jquery, Javascript, Bootstrap, Razor, LinQ',
+      'ASP.NET MVC, Entity Framework, MS SQLSERVER, IIS Server, HTML, CSS, Jquery, Javascript, Bootstrap, Razor, LinQ, Firebase',
     teamSize: '9 members (1 Lead, 4 Devs, 2 Designers, 2 Testers)',
   },
   {
+    url: ['https://hocdungvui.com/phan-mem-hoc-tieng-anh-dha/'],
     CHPlay: 'https://play.google.com/store/apps/details?id=vn.dtponline.dhamobile&hl=vi',
     AppStore: 'https://apps.apple.com/vn/app/digital-homework-activities/id1504632625?l=vi',
     name: 'Digital Homework Activities (DHA)',
@@ -61,33 +60,31 @@ const projectsVi = [
       'Eduhome là một ứng dụng giáo dục đa nền tảng cung cấp tài nguyên giảng dạy và bài tập toàn diện cho giáo viên, phụ huynh và học sinh. Ứng dụng giúp đơn giản hóa quá trình học tập bằng cách cung cấp một nền tảng tập trung cho các hoạt động giáo dục.',
     role: 'Fresher Leader / Full Stack Developer',
     responsibilities: [
-      'Phát triển và triển khai ứng dụng web sử dụng ASP.NET MVC, đảm bảo hiệu suất và khả năng mở rộng.',
-      'Thiết kế và quản lý cơ sở dữ liệu với MS SQL Server, tối ưu hóa truy vấn để truy xuất dữ liệu hiệu quả.',
-      'Xây dựng API backend bằng Entity Framework để tích hợp mượt mà giữa các phiên bản Web, Desktop và Mobile.',
-      'Thiết kế giao diện UI responsive bằng HTML, CSS, JavaScript, jQuery và Bootstrap, đảm bảo trải nghiệm đồng nhất trên mọi thiết bị.',
       'Quản lý tiến độ dự án, phân chia công việc, hỗ trợ kỹ thuật và review code cho các thành viên trong nhóm.',
+      'Tham gia phát triển và triển khai ứng dụng web sử dụng ASP.NET MVC, Entity Framework, HTML, CSS, JavaScript, jQuery và Bootstrap,...',
+      'Thiết kế và quản lý cơ sở dữ liệu với MS SQL Server.',
     ],
     techStack:
-      'ASP.NET MVC, Entity Framework, MS SQLSERVER, IIS Server, HTML, CSS, Jquery, Javascript, Bootstrap, Razor, LinQ',
+      'ASP.NET MVC, Entity Framework, MS SQLSERVER, IIS Server, HTML, CSS, Jquery, Javascript, Bootstrap, Razor, LinQ, Firebase',
     teamSize: '9 thành viên (4 Web Devs, 1 BA, 2 Designers, 2 Testers)',
   },
   {
     name: 'Learning Manager Systems (LMS)',
     duration: '02/2020 - 02/2021',
-    url: ['https://i-course.vn', 'https://dtpteacher.vn/lms-i-course-learning-management-system/'],
+    url: ['https://dtpteacher.vn/lms-i-course-learning-management-system/'],
     description:
       'Hệ thống LMS cung cấp giải pháp quản lý toàn diện cho các cơ sở giáo dục, bao gồm trường học, lớp học, học sinh, giáo viên, thời khóa biểu, điểm danh, bảng lương và báo cáo. Hệ thống giúp tối ưu hóa công tác quản trị và nâng cao hiệu quả vận hành giáo dục.',
     role: 'Full Stack Developer',
     responsibilities: [
-      'Phát triển và triển khai ứng dụng web từ đầu bằng ASP.NET MVC, đảm bảo giải pháp mạnh mẽ và có khả năng mở rộng.',
+      'Phát triển và triển khai ứng dụng web từ đầu bằng ASP.NET MVC, HTML, CSS, jQuery và JavaScript',
       'Xây dựng API backend và quản lý cơ sở dữ liệu bằng Entity Framework và MS SQL Server.',
-      'Phát triển giao diện người dùng bằng HTML, CSS, jQuery và JavaScript với giao diện hiện đại và thân thiện.',
     ],
     techStack:
-      'ASP.NET MVC, Entity Framework, MS SQLSERVER, IIS Server, HTML, CSS, Jquery, Javascript, Bootstrap, Razor, LinQ',
+      'ASP.NET MVC, Entity Framework, MS SQLSERVER, IIS Server, HTML, CSS, Jquery, Javascript, Bootstrap, Razor, LinQ, Firebase',
     teamSize: '9 thành viên (1 Lead, 4 Devs, 2 Designers, 2 Testers)',
   },
   {
+    url: ['https://hocdungvui.com/phan-mem-hoc-tieng-anh-dha/'],
     CHPlay: 'https://play.google.com/store/apps/details?id=vn.dtponline.dhamobile&hl=vi',
     AppStore: 'https://apps.apple.com/vn/app/digital-homework-activities/id1504632625?l=vi',
     name: 'Digital Homework Activities (DHA)',
@@ -155,7 +152,12 @@ export default function Projects(props) {
                        transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl'
             >
               <div>
-                <h3 className='text_title_gradient'>{project.name}</h3>
+                <a href={project.url} target='blank' className='text_title_gradient'>
+                  <span style={{ width: '24px', marginTop: '5px' }}>
+                    <IconLink />
+                  </span>
+                  {project.name}
+                </a>
                 <p className='text-sm text-gray-500 dark:text-gray-400 mb-4'>
                   <span className='bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-xs font-medium'>
                     {project.duration}
@@ -164,53 +166,6 @@ export default function Projects(props) {
                 <p className='text-gray-700 dark:text-gray-300 leading-relaxed mb-4 text-justify'>
                   {project.description}
                 </p>
-                {project.url && (
-                  <p className='mb-2 flex flex-row'>
-                    <strong className='font-semibold text-gray-800 dark:text-gray-200'>URL:&nbsp;</strong>
-                    <span>
-                      {project.url.map((link, i) => {
-                        return (
-                          <a
-                            key={i}
-                            href={link}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='items-center text-blue-600 hover:text-blue-800 dark:text-blue-300 dark:hover:text-blue-100 transition-colors duration-200'
-                          >
-                            {link}
-                            <br />
-                          </a>
-                        )
-                      })}
-                    </span>
-                  </p>
-                )}
-                {project.CHPlay && (
-                  <p className='mb-2'>
-                    <strong className='font-semibold text-gray-800 dark:text-gray-200'>CHPlay:&nbsp;</strong>
-                    <a
-                      href={project.CHPlay}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      className='items-center break-all text-blue-600 hover:text-blue-800 dark:text-blue-300 dark:hover:text-blue-100 transition-colors duration-200'
-                    >
-                      {project.CHPlay}
-                    </a>
-                  </p>
-                )}
-                {project.AppStore && (
-                  <p className='mb-2'>
-                    <strong className='font-semibold text-gray-800 dark:text-gray-200'>AppStore:&nbsp;</strong>
-                    <a
-                      href={project.AppStore}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      className='items-center break-all text-blue-600 hover:text-blue-800 dark:text-blue-300 dark:hover:text-blue-100 transition-colors duration-200'
-                    >
-                      {project.AppStore}
-                    </a>
-                  </p>
-                )}
                 <p className='text-gray-600 dark:text-gray-300 mb-2'>
                   <strong className='font-semibold text-gray-800 dark:text-gray-200'>{tranlations.role}:</strong>{' '}
                   {project.role}
@@ -273,7 +228,12 @@ export default function Projects(props) {
                        transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl'
             >
               <div>
-                <h3 className='text_title_gradient'>{project.name}</h3>
+                <a href={project.url} target='blank' className='text_title_gradient'>
+                  <span style={{ width: '24px', marginTop: '5px' }}>
+                    <IconLink />
+                  </span>
+                  {project.name}
+                </a>
                 <p className='text-sm text-gray-500 dark:text-gray-400 mb-4'>
                   <span className='bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-xs font-medium'>
                     {project.duration}
@@ -282,53 +242,6 @@ export default function Projects(props) {
                 <p className='text-gray-700 dark:text-gray-300 leading-relaxed mb-4 text-justify'>
                   {project.description}
                 </p>
-                {project.url && (
-                  <p className='mb-2 flex flex-row'>
-                    <strong className='font-semibold text-gray-800 dark:text-gray-200'>URL:&nbsp;</strong>
-                    <span>
-                      {project.url.map((link, i) => {
-                        return (
-                          <a
-                            key={i}
-                            href={link}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='items-center text-blue-600 hover:text-blue-800 dark:text-blue-300 dark:hover:text-blue-100 transition-colors duration-200'
-                          >
-                            {link}
-                            <br />
-                          </a>
-                        )
-                      })}
-                    </span>
-                  </p>
-                )}
-                {project.CHPlay && (
-                  <p className='mb-2'>
-                    <strong className='font-semibold text-gray-800 dark:text-gray-200'>CHPlay:&nbsp;</strong>
-                    <a
-                      href={project.CHPlay}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      className='items-center break-all text-blue-600 hover:text-blue-800 dark:text-blue-300 dark:hover:text-blue-100 transition-colors duration-200'
-                    >
-                      {project.CHPlay}
-                    </a>
-                  </p>
-                )}
-                {project.AppStore && (
-                  <p className='mb-2'>
-                    <strong className='font-semibold text-gray-800 dark:text-gray-200'>AppStore:&nbsp;</strong>
-                    <a
-                      href={project.AppStore}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      className='items-center break-all text-blue-600 hover:text-blue-800 dark:text-blue-300 dark:hover:text-blue-100 transition-colors duration-200'
-                    >
-                      {project.AppStore}
-                    </a>
-                  </p>
-                )}
                 <p className='text-gray-600 dark:text-gray-300 mb-2'>
                   <strong className='font-semibold text-gray-800 dark:text-gray-200'>{tranlations.role}:</strong>{' '}
                   {project.role}

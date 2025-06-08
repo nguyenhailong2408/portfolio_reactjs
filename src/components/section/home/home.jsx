@@ -61,7 +61,7 @@ export default function Home(props) {
         {/* Các nút mạng xã hội */}
         <div className='flex space-x-3 sm:space-x-4 my-4 sm:my-6'>
           <Button variant='outline' size='icon'>
-            <a href='https://github.com/your-github' target='_blank' rel='noreferrer' aria-label='Hồ sơ GitHub'>
+            <a href='https://github.com/nguyenhailong2408' target='_blank' rel='noreferrer' aria-label='Hồ sơ GitHub'>
               <Github className='w-6 h-6' />
             </a>
           </Button>
@@ -72,7 +72,7 @@ export default function Home(props) {
           </Button>
           <Button variant='outline' size='icon'>
             <a
-              href='https://linkedin.com/in/your-linkedin'
+              href='https://www.linkedin.com/in/nguyen-hai-long-294b16235/'
               target='_blank'
               rel='noreferrer'
               aria-label='Hồ sơ LinkedIn'
